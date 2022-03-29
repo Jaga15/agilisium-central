@@ -23,4 +23,4 @@ yarn dev
 - lint-staged: linting will only happen on staged files, not all file
 - Latest Husky
 - TypeScript types are checked before each commit
-- You can build it yourself by [reading the blog post](https://paulintrognon.fr/blog/typescript-prettier-eslint-next-js) :-)
+- You can build it yourself by [reading the blog post](https://paulintrognon.fr/blog/typescript-prettier-eslint-next-js) :-))
