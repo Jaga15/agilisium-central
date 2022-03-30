@@ -12,7 +12,7 @@ interface PostType {
 
 const Post = (props: PostType) => {
   return (
-    <div className="p-3 bg-white mt-3 rounded hover:shadow-xl">
+    <div className="p-4 bg-white mt-3 rounded hover:shadow-xl">
       <p className={classes.fvsmall}>
         Posted in
         <span className="font-semibold pl-1">{props.postgroup}</span>

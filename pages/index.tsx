@@ -10,6 +10,7 @@ import Events from '../components/Events/Events'
 import WallOfFameCard from '../components/WallOfFameCard/WallOfFameCard'
 import TableComponent from '../components/TableComponent/TableComponent'
 import classes from '../styles/Home.module.css'
+import CreatePost from '../components/CreatePost/CreatePost'
 
 const tabledata = [
   {
@@ -157,6 +158,8 @@ const Home: NextPage = () => {
 
         <div className={classes['w-45']}>
           <div className=" bg-gray-100 p-6 m-4">
+            <p className={` pb-3 ${classes.feedHeading}`}>Yammer feed</p>
+            <CreatePost />
             <Post
               postgroup="photography Communtity"
               posteduserimage="assets/images/l1.png"
