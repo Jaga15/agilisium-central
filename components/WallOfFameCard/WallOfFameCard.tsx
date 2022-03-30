@@ -84,7 +84,7 @@ const WallOfFameCard = () => {
                   lacinia dui ut tortor maximus imperdiet. Mauris vel nulla
                   vitae metus porta condimentum eget nec dui. Quisque nisl odio,
                   pretium a tincidunt nec, ullamcorper quis est. Fusce quis
-                  metus a tortor dapibus commodo. Maecenas mattis lorem vel
+                  metus a tortor dapibus commodo. Maecenas mattis lorem
                   elementum commodo. Vestibulum purus nibh, lacinia maximus ante
                   non, viverra posuere enim. Proin ultrices imperdiet ex, ac
                   tincidunt Leo posuere eu. Nunc sollicitudin ligula id ligula
