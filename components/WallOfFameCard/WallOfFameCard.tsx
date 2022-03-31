@@ -37,7 +37,7 @@ const WallOfFameCard = () => {
               </div>
 
               <div className="w-7/12">
-                <p className={`${classes.title} text-4xl pb-3`}>
+                <p className={`${classes.title} text-4xl pb-3 text-left`}>
                   Go-Getter Award
                 </p>
                 <p className="text-sm text-left">
@@ -72,7 +72,7 @@ const WallOfFameCard = () => {
               </div>
 
               <div className="w-7/12">
-                <p className={`${classes.title} text-4xl pb-3`}>
+                <p className={`${classes.title} text-4xl pb-3 text-left`}>
                   Go-Getter Award
                 </p>
                 <p className="text-sm text-left">
