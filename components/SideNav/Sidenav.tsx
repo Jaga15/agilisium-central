@@ -6,7 +6,7 @@ interface SideNavtype {
 }
 const SideNav = (props: SideNavtype) => {
   return (
-    <div className={`${classes.bluegradient} ${classes.height} `}>
+    <div className={`${classes.bluegradient} h-screen `}>
       <div className="w-5 h-5 ml-24">
         <div className={classes.triangle}></div>
       </div>
@@ -23,7 +23,7 @@ const SideNav = (props: SideNavtype) => {
               ? `/Bu/InternalCommunications/${ele
                   .replace('/', '')
                   .replace(' ', '')}`
-              : `#${ele}`
+              : `/Bu/InternalCommunications/#${ele}`
           }
         >
           {ele.replace('/', '')}
