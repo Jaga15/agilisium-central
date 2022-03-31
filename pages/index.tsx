@@ -1,6 +1,4 @@
 import type { NextPage } from 'next'
-import Navbar from '../components/Navbar/Navbar'
-import Header from '../components/Header/Header'
 import WhatsNewCard from '../components/WhatsNewCard/WhatsNewCard'
 import EntertainmentCard from '../components/EntertainmentCard/EntertainmentCard'
 import React from 'react'
@@ -133,8 +131,6 @@ const data = {
 const Home: NextPage = () => {
   return (
     <div>
-      <Header />
-      <Navbar />
       <div className="flex ">
         <div className={classes['w-20']}>
           <div className=" pl-9 mr-4">

@@ -1,29 +1,34 @@
+import { useRouter } from 'next/router'
 import classes from './Navbar.module.css'
 
 const Navbar = () => {
+  const Router = useRouter()
+
+  const routes = ['Bu', 'Policy Documents', 'Current Openings', 'Who’s MAD']
+  const classname = (path: string) => {
+    return Router.pathname == path ||
+      Router.pathname.indexOf(path.replace('/', '')) > 0
+      ? `${classes.navitem} ${classes.active} mx-4 text-warning  hover:cursor-pointer`
+      : `${classes.navitem} mx-4 text-warning  hover:cursor-pointer`
+  }
+
   return (
     <nav
       className={`${classes.nav} flex flex-row items-center justify-between`}
     >
       <div className="flex pl-3 ">
-        <a
-          className={`${classes.navitem} ${classes.active} mx-4 text-warning`}
-          href="./index.html"
-        >
+        <p className={classname('/')} onClick={() => Router.push('/')}>
           Home
-        </a>
-        <a className={`${classes.navitem} mx-4`} href="#">
-          BU
-        </a>
-        <a className={`${classes.navitem} mx-4`} href="#">
-          Policy Documents
-        </a>
-        <a className={`${classes.navitem} mx-4`} href="#">
-          Current Openings
-        </a>
-        <a className={`${classes.navitem} mx-4`} href="#">
-          Who’s MAD
-        </a>
+        </p>
+        {routes.map((ele) => (
+          <p
+            key={ele}
+            className={classname(`/${ele}`)}
+            onClick={() => Router.push(`/${ele}`)}
+          >
+            {ele}
+          </p>
+        ))}
       </div>
       <div className="flex items-center">
         <div
@@ -38,7 +43,7 @@ const Navbar = () => {
           >
             Suggestion Box
             <img
-              src="assets/images/Group 17.svg"
+              src="../../assets/images/Group 17.svg"
               className={classes.bellicon}
             />
           </button>
