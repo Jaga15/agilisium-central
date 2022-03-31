@@ -57,9 +57,12 @@ const Header = () => {
         <span className="flex items-center">
           <img
             className={`mr-1 ${classes.navimg} `}
-            src="assets/images/l2.png"
+            src="../../assets/images/l2.png"
           />
-          <img className={classes.downicon} src="assets/images/Path 71.png" />
+          <img
+            className={classes.downicon}
+            src="../../assets/images/Path 71.png"
+          />
         </span>
         {/* </div> */}
       </div>

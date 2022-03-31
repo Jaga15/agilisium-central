@@ -1,0 +1,12 @@
+.bluegradient {
+  background: rgb(199, 236, 255);
+  background: linear-gradient(
+    179deg,
+    rgba(199, 236, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  color: black;
+}
+.blue {
+  color: #2c61a4;
+}
