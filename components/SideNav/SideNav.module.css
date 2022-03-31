@@ -10,3 +10,11 @@
 .blue {
   color: #2c61a4;
 }
+.triangle {
+  border-top: 13px solid #2c61a4;
+  border-right: 9px solid transparent;
+  border-left: 9px solid transparent;
+}
+.height {
+  height: 75vh;
+}

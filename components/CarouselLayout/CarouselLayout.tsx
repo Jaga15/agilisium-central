@@ -3,7 +3,7 @@ interface CarouselLayouttype {
 }
 const CarouselLayout = (props: CarouselLayouttype) => {
   return (
-    <div className="flex py-8 items-center justify-between mx-7">
+    <div className="flex py-8 items-center justify-between mx-3">
       <img src="../assets/images/Group 68.svg" className="mr-2 w-6 h-6" />
       <img className="object-scale-down h-72 " src={props.image} />
       <img src="../assets/images/Group 18.svg" className="ml-2 w-6 h-6" />
