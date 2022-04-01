@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel'
 const WallOfFameCard = () => {
   return (
     <div className="mt-9 mb-28">
-      <p className={`${classes.blue} text-3xl text-center pb-3`}>
+      <p className={`${classes.blue} text-3xl text-center pb-3 `}>
         Wall Of Fame
       </p>
       <div className="w-5/6 mx-auto relative flex flex-col shadow-2xl rounded-lg">
