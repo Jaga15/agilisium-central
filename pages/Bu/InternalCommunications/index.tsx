@@ -9,35 +9,35 @@ const fields = ['Scoop', 'Monthly Digest', '/Daily Bytes']
 const data = {
   FunSpace: [
     {
-      image: 'assets/images/image1.png',
+      image: '../../../assets/images/image1.png',
     },
     {
-      image: 'assets/images/image1.png',
+      image: '../../../assets/images/image1.png',
     },
     {
-      image: 'assets/images/image1.png',
+      image: '../../../assets/images/image1.png',
     },
   ],
   Scoop: [
     {
-      image: '../../assets/images/image5.png',
+      image: '../../../assets/images/image5.png',
     },
     {
-      image: '../../assets/images/image5.png',
+      image: '../../../assets/images/image5.png',
     },
     {
-      image: '../../assets/images/image5.png',
+      image: '../../../assets/images/image5.png',
     },
   ],
   MonthlyDigest: [
     {
-      image: '../../assets/images/image6.png',
+      image: '../../../assets/images/image6.png',
     },
     {
-      image: '../../assets/images/image6.png',
+      image: '../../../assets/images/image6.png',
     },
     {
-      image: '../../assets/images/image6.png',
+      image: '../../../assets/images/image6.png',
     },
   ],
 }
