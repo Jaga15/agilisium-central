@@ -1,12 +1,46 @@
-import CarouselLayout from '../../../components/CarouselLayout/CarouselLayout'
+import Carousel from '../../../components/Carousel/Carousel'
 import GradientTitle from '../../../components/GradientTitle/GradientTitle'
 import SideNav from '../../../components/SideNav/Sidenav'
 import WhatsNewCard from '../../../components/WhatsNewCard/WhatsNewCard'
 import WriteToUS from '../../../components/WriteToUS/WriteToUS'
-// import classes from '../../styles/InternalCommunication.module.css'
 
 const fields = ['Scoop', 'Monthly Digest', '/Daily Bytes']
 
+const data = {
+  FunSpace: [
+    {
+      image: '../../../assets/images/image1.png',
+    },
+    {
+      image: '../../../assets/images/image1.png',
+    },
+    {
+      image: '../../../assets/images/image1.png',
+    },
+  ],
+  Scoop: [
+    {
+      image: '../../../assets/images/Image5.png',
+    },
+    {
+      image: '../../../assets/images/Image5.png',
+    },
+    {
+      image: '../../../assets/images/Image5.png',
+    },
+  ],
+  MonthlyDigest: [
+    {
+      image: '../../../assets/images/Image6.png',
+    },
+    {
+      image: '../../../assets/images/Image6.png',
+    },
+    {
+      image: '../../../assets/images/Image6.png',
+    },
+  ],
+}
 const InternalCommunication = () => {
   return (
     <div>
@@ -16,11 +50,35 @@ const InternalCommunication = () => {
         </div>
         <div className={`w-3/6 `}>
           <GradientTitle name="Fun Space" />
-          <CarouselLayout image="../../assets/images/image1.png" />
+          <Carousel noofslides={data.FunSpace.length}>
+            {data.FunSpace.map((ele, i) => (
+              <img
+                key={i}
+                src={ele.image}
+                className="object-scale-down h-72  my-10"
+              />
+            ))}
+          </Carousel>
           <GradientTitle name="Scoop" />
-          <CarouselLayout image="../../assets/images/image 5.png" />
+          <Carousel noofslides={data.FunSpace.length}>
+            {data.Scoop.map((ele, i) => (
+              <img
+                key={i}
+                src={ele.image}
+                className="object-scale-down h-72 my-10"
+              />
+            ))}
+          </Carousel>
           <GradientTitle name="Monthly Digest" />
-          <CarouselLayout image="../../assets/images/image 6.png" />
+          <Carousel noofslides={data.FunSpace.length}>
+            {data.MonthlyDigest.map((ele, i) => (
+              <img
+                key={i}
+                src={ele.image}
+                className="object-scale-down h-72 my-10"
+              />
+            ))}
+          </Carousel>
         </div>
         <div className={`w-1/5 mr-10`}>
           <WhatsNewCard
@@ -30,6 +88,7 @@ const InternalCommunication = () => {
           />
         </div>
       </div>
+
       <WriteToUS />
     </div>
   )

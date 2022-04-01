@@ -1,10 +1,47 @@
 import Image from 'next/image'
+import Archives from '../../../components/Archives/Archives'
 import SideNav from '../../../components/SideNav/Sidenav'
 import WriteToUS from '../../../components/WriteToUS/WriteToUS'
 import styles from './styles.module.css'
 
 const fields = ['Scoop', 'Monthly Digest', '/Daily Bytes']
 
+const Archivesdata = {
+  lastweek: [
+    {
+      title: 'Build Application Modernization Practice with AWS (Technical)',
+      description:
+        'Whatever the agency, organization or institution, our customers want to become more agile, so they can innovate and respond to change faster.',
+    },
+    {
+      title: 'Build Application Modernization Practice with AWS (Technical)',
+      description:
+        'Whatever the agency, organization or institution, our customers want to become more agile, so they can innovate and respond to change faster.',
+    },
+    {
+      title: 'Build Application Modernization Practice with AWS (Technical)',
+      description:
+        'Whatever the agency, organization or institution, our customers want to become more agile, so they can innovate and respond to change faster.',
+    },
+  ],
+  lastmonth: [
+    {
+      title: 'Build Application Modernization Practice ',
+      description:
+        'Whatever the agency, organization or institution, our customers want to become more agile, so they can innovate and respond to change faster.',
+    },
+    {
+      title: 'Build Application Modernization Practice ',
+      description:
+        'Whatever the agency, organization or institution, our customers want to become more agile, so they can innovate and respond to change faster.',
+    },
+    {
+      title: 'Build Application Modernization Practice ',
+      description:
+        'Whatever the agency, organization or institution, our customers want to become more agile, so they can innovate and respond to change faster.',
+    },
+  ],
+}
 const DailyBytes = () => {
   return (
     <div>
@@ -23,19 +60,19 @@ const DailyBytes = () => {
             </div>
           </div>
           <div className="mx-10 shadow-lg">
-            <div className=" p-12">
-              <div className={`${styles.title} pb-2`}>
+            <div className=" p-9">
+              <div className={`text-2xl pb-2`}>
                 Kudos to the Team for making the Town Hall a Grand Success
               </div>
               <div className="pb-3">
                 <button
-                  className={`${styles.bgBrown} ${styles.fs12} text-white flex px-3 justify-center py-1`}
+                  className={`${styles.bgBrown} text-xs text-white flex px-3 justify-center py-1`}
                 >
                   Mar 2,2022
                 </button>
               </div>
-              <div className={`${styles.spacing0} ${styles.fs14} pt-5 `}>
-                <p className="pb-2 font-extralight">
+              <div className={` pt-5 `}>
+                <p className="pb-2 text-xs">
                   I couldn’t resist writing this email as soon as I watched the
                   townhall recording / streaming video. OMG! how wonderful we
                   have grown. It was a delightful surprise for me to see so many
@@ -53,7 +90,7 @@ const DailyBytes = () => {
                   thoughtful one.
                 </p>
                 <br />
-                <p className="pb-2 font-extralight">
+                <p className="pb-2 text-xs">
                   I realize how much effort has gone behind all of this and
                   kudos to each and every one who made all this possible.
                   The“Real life Hero” felicitation and the speech by the
@@ -61,24 +98,27 @@ const DailyBytes = () => {
                   inspiring,touching and emotional, that gave me goosebumps.
                 </p>
                 <br />
-                <p className="pb-2 font-extralight">
+                <p className="pb-2 text-xs">
                   Please pass on my appreciation and happiness to all in
                   India.You guys are simply rocking and I am missing all the
                   fun.
                 </p>
               </div>
-              <div className={`${styles.fs16} ${styles.spacing0} pt-5`}>
+              <div className={`text-lg pt-5`}>
                 Girish Ramakrishnan
                 <br />
-                <p className={`${styles.fs12}`}>
-                  Associate Director - Delivery (US)
-                </p>
+                <p className={`text-xs`}>Associate Director - Delivery (US)</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="w-2/5"></div>
+        <div className="w-2/5">
+          <Archives
+            lastmonth={Archivesdata.lastmonth}
+            lastweek={Archivesdata.lastweek}
+          />
+        </div>
       </div>
       <WriteToUS />
     </div>
