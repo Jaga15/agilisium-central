@@ -1,63 +1,7 @@
-.bgSky {
-  background: rgb(199, 236, 255);
-  background: linear-gradient(
-    179deg,
-    rgba(199, 236, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-}
-.textBlue {
-  color: #2c61a4;
-}
-.white {
-  background-color: #ffffff;
-  padding: 0.9px;
-}
-.active {
-  color: #f85e19;
-}
 .textOrange {
   color: #f85e19;
   font-size: 19px;
 }
-.title {
-  font-size: 24px;
-  font-family: Raleway;
-}
 .bgBrown {
   background-color: #6c6c6c;
-}
-.fs12 {
-  font-size: 12px;
-  font-family: Raleway;
-}
-.spacing0 {
-  letter-spacing: 0px;
-  line-height: 90%;
-}
-.fs14 {
-  font-size: 14px;
-  font-family: Raleway;
-}
-.fs16 {
-  font-size: 16px;
-  font-family: Raleway;
-}
-.position {
-  position: absolute;
-  left: 50%;
-  top: 0%;
-}
-.titleOrange {
-  color: #f85e19;
-  font-family: Raleway;
-  font-size: 46px;
-}
-.mainGray {
-  color: #5c5c5c;
-  font-size: 28px;
-  font-family: 'Raleway', sans-serif;
-}
-.textArea {
-  border: 1px solid black;
 }

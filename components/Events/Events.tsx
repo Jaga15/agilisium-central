@@ -20,50 +20,51 @@ const Events = (props: Eventtype) => {
   const [data, setdata] = useState<Array<event>>(props.birthday)
 
   const changedata = (name: string) => {
-    const id = ['birthday', 'WorkAnniversary', 'NewJoiners', 'NewBorn']
+    const id = Object.keys(props)
+    // const id = ['birthday', 'WorkAnniversary', 'NewJoiners', 'NewBorn']
     id.map(
       (ele) =>
         (document.getElementById(
           ele
-        )!.className = `whitespace-nowrap text-sm mr-4 hover:cursor-pointer`)
+        )!.className = `whitespace-nowrap text-sm mr-4 `)
     )
     document.getElementById(
       name
-    )!.className = `${classes.active} whitespace-nowrap text-sm mr-4 hover:cursor-pointer`
+    )!.className = `${classes.active} whitespace-nowrap text-sm mr-4 `
     setdata(props[name as keyof Eventtype])
   }
 
   return (
     <div className="p-6 rounded bg-gray-100 ">
       <div className="flex flex-row overflow-auto">
-        <p
-          className={`${classes.active} whitespace-nowrap text-sm mr-4 hover:cursor-pointer`}
+        <button
+          className={`${classes.active} whitespace-nowrap text-sm mr-4 `}
           id="birthday"
           onClick={() => changedata('birthday')}
         >
           Birthday
-        </p>
-        <p
-          className="whitespace-nowrap text-sm mr-4 hover:cursor-pointer"
+        </button>
+        <button
+          className="whitespace-nowrap text-sm mr-4 "
           id="WorkAnniversary"
           onClick={() => changedata('WorkAnniversary')}
         >
           Work Anniversary
-        </p>
-        <p
-          className="whitespace-nowrap text-sm mr-4 hover:cursor-pointer"
+        </button>
+        <button
+          className="whitespace-nowrap text-sm mr-4 "
           id="NewJoiners"
           onClick={() => changedata('NewJoiners')}
         >
           New Joiners
-        </p>
-        <p
-          className="whitespace-nowrap text-sm mr-4 hover:cursor-pointer"
+        </button>
+        <button
+          className="whitespace-nowrap text-sm mr-4 "
           id="NewBorn"
           onClick={() => changedata('NewBorn')}
         >
           New Born
-        </p>
+        </button>
       </div>
       <div className="flex mt-6 overflow-auto">
         {data.map((ele, index) => (

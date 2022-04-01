@@ -75,7 +75,7 @@ const InternalCommunication = () => {
               <img
                 key={i}
                 src={ele.image}
-                className="object-scale-down h-72  my-10"
+                className="object-scale-down h-72 my-10"
               />
             ))}
           </Carousel>
@@ -88,6 +88,7 @@ const InternalCommunication = () => {
           />
         </div>
       </div>
+
       <WriteToUS />
     </div>
   )
