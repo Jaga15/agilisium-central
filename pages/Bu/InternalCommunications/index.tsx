@@ -20,24 +20,24 @@ const data = {
   ],
   Scoop: [
     {
-      image: '../../../assets/images/image5.png',
+      image: '../../../assets/images/Image5.png',
     },
     {
-      image: '../../../assets/images/image5.png',
+      image: '../../../assets/images/Image5.png',
     },
     {
-      image: '../../../assets/images/image5.png',
+      image: '../../../assets/images/Image5.png',
     },
   ],
   MonthlyDigest: [
     {
-      image: '../../../assets/images/image6.png',
+      image: '../../../assets/images/Image6.png',
     },
     {
-      image: '../../../assets/images/image6.png',
+      image: '../../../assets/images/Image6.png',
     },
     {
-      image: '../../../assets/images/image6.png',
+      image: '../../../assets/images/Image6.png',
     },
   ],
 }
