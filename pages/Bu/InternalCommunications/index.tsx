@@ -9,13 +9,13 @@ const fields = ['Scoop', 'Monthly Digest', '/Daily Bytes']
 const data = {
   FunSpace: [
     {
-      image: '../../assets/images/image1.png',
+      image: 'assets/images/image1.png',
     },
     {
-      image: '../../assets/images/image1.png',
+      image: 'assets/images/image1.png',
     },
     {
-      image: '../../assets/images/image1.png',
+      image: 'assets/images/image1.png',
     },
   ],
   Scoop: [
